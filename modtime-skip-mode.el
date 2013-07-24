@@ -3,13 +3,12 @@
 ;; Filename: modtime-skip-mode.el
 ;; Description: Minor mode for disabling modtime and supersession checks on files.
 ;; Author: Jordon Biondo <biondoj@mail.gvsu.edu>
-;; Maintainer: Jordon Biondo
 ;; Created: Tue Jul 23 21:05:04 2013 (-0400)
-;; Version: .1
-;; Last-Updated: Tue Jul 23 21:08:12 2013 (-0400)
+;; Version: 0.9
+;; Last-Updated: Wed Jul 24 01:19:23 2013 (-0400)
 ;;           By: Jordon Biondo
-;;     Update #: 1
-;; URL: www.github.com/jordonbiondo/modtime-skip-mode
+;;     Update #: 2
+;; URL: github.com/jordonbiondo/modtime-skip-mode
 ;; Doc URL:
 ;; Keywords:
 ;; Compatibility: Tested on 24.3
@@ -28,7 +27,7 @@
 ;;
 ;;; Change Log:
 ;;
-;; 
+;;
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -70,9 +69,9 @@
   (ad-update-regexp "\\<modtime/turn-it-off-.*"))
 
 (define-minor-mode modtime-skip-mode
-  "Emacs will never think a file has been modified somewhere else."
+  "When the mode is active it disables the checking of file modification times and \"changed on disc\" messages."
   :init-value nil
-  :lighter ""
+  :lighter "" ;; no name in mode-line
   :global t
   (if modtime-skip-mode
       (modtime/enable-checking)
