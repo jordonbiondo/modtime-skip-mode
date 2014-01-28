@@ -68,6 +68,7 @@
   (ad-activate-regexp "\\<modtime/turn-it-off-.*")
   (ad-update-regexp "\\<modtime/turn-it-off-.*"))
 
+;;;###autoload
 (define-minor-mode modtime-skip-mode
   "When the mode is active it disables the checking of file modification times and \"changed on disc\" messages."
   :init-value nil
