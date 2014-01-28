@@ -4,12 +4,11 @@
 ;; Description: Minor mode for disabling modtime and supersession checks on files.
 ;; Author: Jordon Biondo <biondoj@mail.gvsu.edu>
 ;; Created: Tue Jul 23 21:05:04 2013 (-0400)
-;; Version: 0.9.1
+;; Version: 0.9.2
 ;; Last-Updated: Tue Jan 28 16:57:36 2014 (-0500)
 ;;           By: jordon.biondo
 ;;     Update #: 3
-;; URL: github.com/jordonbiondo/modtime-skip-mode
-;; Doc URL:
+;; URL: http://www.github.com/jordonbiondo/modtime-skip-mode
 ;; Keywords:
 ;; Compatibility: Tested on 24.3
 ;;
